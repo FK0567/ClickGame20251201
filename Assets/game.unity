@@ -2374,6 +2374,8 @@ GameObject:
   - component: {fileID: 1644042341}
   - component: {fileID: 1644042340}
   - component: {fileID: 1644042342}
+  - component: {fileID: 1644042343}
+  - component: {fileID: 1644042344}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2395,7 +2397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1644042283}
   suppressBlockAutoSelect: 0
-  waitForFrames: 1
+  waitForFrames: 0
 --- !u!114 &1644042283
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2410,8 +2412,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 68.49254
-    y: 70
+    x: 256.8541
+    y: 298.08517
     width: 110.19
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2420,7 +2422,8 @@ MonoBehaviour:
   blockName: New Block
   description: 
   eventHandler: {fileID: 1644042282}
-  commandList: []
+  commandList:
+  - {fileID: 1644042343}
   suppressAllAutoSelections: 0
 --- !u!114 &1644042284
 MonoBehaviour:
@@ -2435,11 +2438,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 94.40025, y: -23.374475}
+  scrollPos: {x: -49.377426, y: -71.404686}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 616
-  zoom: 0.85000014
+  blockViewHeight: 561
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2447,9 +2450,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1644042341}
+  - {fileID: 1644042315}
   selectedCommands:
-  - {fileID: 1644042340}
+  - {fileID: 1644042314}
   variables: []
   description: 
   stepPause: 0
@@ -2640,8 +2643,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 69.763824
-    y: 333.49396
+    x: 68.763824
+    y: 334.49396
     width: 81.67
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2925,7 +2928,7 @@ MonoBehaviour:
   - {fileID: 1763267372}
   orderInLayer:
     integerRef: {fileID: 0}
-    integerVal: 101
+    integerVal: 100
 --- !u!114 &1644042315
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3746,10 +3749,11 @@ MonoBehaviour:
   eventHandler: {fileID: 1644042342}
   commandList:
   - {fileID: 1644042340}
+  - {fileID: 1644042344}
   suppressAllAutoSelections: 0
 --- !u!114 &1644042342
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3763,6 +3767,60 @@ MonoBehaviour:
   suppressBlockAutoSelect: 0
   clickableObject: {fileID: 1882108081}
   waitFrames: 1
+--- !u!114 &1644042343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644042278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 57
+  indentLevel: 0
+  storyText: "\u7D42\u65BC\u56DE\u5BB6\u4E86...{wc}\n\u6211\u770B\u770B\u5594...\u4ED6\u8AAA\u7684\u9470\u5319\u5728\u54EA\u88E1\u554A...?{wc}\n\u9084\u8AAA\u67095\u628A\u9470\u5319...\u600E\u9EBC\u9019\u9EBC\u591A\u628A...?"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1644042344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644042278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 58
+  indentLevel: 0
+  storyText: "\u70BA\u751A\u9EBC\u6771\u897F\u79FB\u958B\u4E4B\u5F8C\u5C31\u98DB\u8D77\u4F86\u554A?!{wc}\n\u800C\u4E14\u70BA\u4EC0\u9EBC\u9470\u5319\u8981\u653E\u9019\u9EBC\u5927...?!"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1697107254
 GameObject:
   m_ObjectHideFlags: 0
